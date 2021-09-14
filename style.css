@@ -1,0 +1,58 @@
+.container {
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: orange;
+    }
+    .container {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+
+/* Tablet */
+
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+
+/* each one must be separated 
+                    one for pC
+                    one for mobile
+                    one for tablet */
+
+
+/* PC */
+
+@media screen and (min-width: 1201px) {
+    body {
+        background-color: red;
+    }
+    .P1 {
+        width: 100%;
+        border: 5px solid black;
+        display: inline-block;
+    }
+    .P2 {
+        width: 100%;
+        border: 5px solid rgb(201, 28, 28);
+        display: inline-block;
+    }
+    .P3 {
+        width: 100%;
+        border: 5px solid rgb(38, 16, 241);
+        display: inline-block;
+    }
+}
